@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS memos;
+
+CREATE TABLE memos (
+  memo_id INT unsigned AUTO_INCREMENT,
+  user_id INT unsigned NOT NULL,
+  site_id INT unsigned NOT NULL,
+  created_at DATETIME NOT NULL CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY(id)
+);
