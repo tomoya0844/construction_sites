@@ -1,13 +1,13 @@
 package demo.example.entity;
 
-public class Construction_site {
+public class constructionSite {
 
   private int id;
   private String siteName;
   private int zipcode;
   private String address;
 
-  public Construction_site(int id, String siteName, int zipcode, String address) {
+  public constructionSite(int id, String siteName, int zipcode, String address) {
     this.id = id;
     this.siteName = siteName;
     this.zipcode = zipcode;

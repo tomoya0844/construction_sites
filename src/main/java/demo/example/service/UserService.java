@@ -13,9 +13,11 @@ public class UserService {
   public UserService(UserMapper userMapper) {
     this.userMapper = userMapper;
   }
+
   public List<User> findUsers() {
     return userMapper.findAll();
   }
+
   public User findUser(int id) {
     Optional<User> user = this.userMapper.findById(id);
     return user.get();
