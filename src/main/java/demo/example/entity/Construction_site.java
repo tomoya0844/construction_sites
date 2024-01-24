@@ -1,14 +1,15 @@
 package demo.example.entity;
 
 public class Construction_site {
+
   private int id;
-  private String site_name;
-  private Integer zipcode;
+  private String siteName;
+  private int zipcode;
   private String address;
 
-  public Construction_site(int id, String site_name, Integer zipcode, String address) {
+  public Construction_site(int id, String siteName, int zipcode, String address) {
     this.id = id;
-    this.site_name = site_name;
+    this.siteName = siteName;
     this.zipcode = zipcode;
     this.address = address;
   }
@@ -21,19 +22,19 @@ public class Construction_site {
     this.id = id;
   }
 
-  public String getSite_name() {
-    return site_name;
+  public String getSiteName() {
+    return siteName;
   }
 
-  public void setSite_name(String site_name) {
-    this.site_name = site_name;
+  public void setSiteName(String siteName) {
+    this.siteName = siteName;
   }
 
-  public Integer getZipcode() {
+  public int getZipcode() {
     return zipcode;
   }
 
-  public void setZipcode(Integer zipcode) {
+  public void setZipcode(int zipcode) {
     this.zipcode = zipcode;
   }
 
